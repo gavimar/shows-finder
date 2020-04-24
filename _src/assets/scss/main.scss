@@ -1,0 +1,147 @@
+	@import 'core/settings';
+	@import 'core/links';
+	@import "./utils/variables";
+	@import "./utils/mixins";
+
+	body {
+		
+		margin: 0;
+		height: 100vh;
+		// background-color: #FBEEC1
+	}
+
+	.header{
+		border-bottom: solid 1px black;
+		display: flex;
+		flex-direction: column;
+		justify-content: right;
+		align-items: center;
+
+		@media all and (min-width:$tablet){
+			flex-direction: row;
+			justify-content: right;
+			align-items: center;
+		}
+		
+
+	img{
+		width:250px;
+		height:100px;
+		margin:0;
+		padding:0;
+		margin-top: 10px;
+	}
+
+		input{
+			margin: 10px;
+			padding: 5px;
+			border-radius: 10px;
+		}
+
+		button{
+			border: none;
+			border-radius: 10px;
+			
+			padding: 5px;
+			margin-bottom: 10px;
+		
+			
+			text-align: center;
+			vertical-align: middle;
+			font-family: 'Concert One', cursive;
+			.button-text{
+				padding: 5px;
+			}
+
+		}
+	}
+
+	.main{
+		display: flex;
+		flex-direction: column;
+		@media all and (min-width:$tablet){
+			flex-direction: row;
+		}
+
+		.my_favourites{
+			margin:0;
+			margin-top: 20px;
+			min-width: 15vw;
+			h2{
+				padding: 5px;
+				margin-left: 15px;
+				font-family: 'Concert One', cursive;
+			}
+		}
+	}
+
+
+	.liElement{
+		text-decoration: none;
+		background-color: #99d3f5;
+		color: #2f2fa2;
+		margin: 10px;
+		border-radius: 10px;
+
+		h2{
+			margin:0;
+			padding: 10px;
+			text-align: center;
+			font-family: 'Francois One', sans-serif;
+		}
+
+		img{
+			padding: 10px;
+		}
+	}
+
+	.liFavourite{
+		text-decoration: none;
+		margin: 10px;
+		max-width: 150px;
+		border-radius: 10px;
+		background-color:#5c91f3;
+		color: #2f2fa2;
+		margin:10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		i{
+			padding: 5px;
+			display:inline;
+		}
+		p{
+			padding: 5px;
+			margin:0;
+			color:#2f2fa2;
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			font-family: 'Francois One', sans-serif;
+		}
+		img{
+			padding: 10px;
+			width: 100px;
+			height: 150px;
+		}
+	}
+
+
+	ul {
+		list-style-type: none;
+		margin: 10px;
+		padding: 10px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		}
+
+		.selected{
+			background-color:#5c91f3;
+			color: #2f2fa2;
+			margin:10px;
+			img{
+			padding: 10px;
+		}
+		}
